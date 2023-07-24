@@ -1,6 +1,9 @@
 ﻿namespace DiceDragon.Shared.DataTransferObjects;
 
-public class SkillUpdateDto : SavingThrowUpdateDto
+public class SkillUpdateDto
 {
-    public string Name { get; set; }
+    public required string Name { get; set; }
+    public required string Ability { get; set; }
+    public int Modifier { get; set; }
+    public int Proficiency { get; set; }
 }

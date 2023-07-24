@@ -1,11 +1,11 @@
-﻿using DiceDragon.Shared.Enums;
-
-namespace DiceDragon.Shared.ValueObjects;
+﻿namespace DiceDragon.Shared.ValueObjects;
 
 public class AbilityScore
 {
-    public Ability Ability { get; set; }
-    public int Score { get; set; }
+    public required string Abbreviation { get; set; }
+    public required string Name { get; set; }
+    public int Value { get; set; }
+    public int Modifier { get; set; }
 
     public SavingThrow SavingThrow { get; set; }
     public List<Skill> Skills { get; set; }

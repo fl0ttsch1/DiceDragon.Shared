@@ -7,16 +7,16 @@ public class CharacterSheet
     // TODO spells
     // TODO inventory (weapons!)
 
-    public string Race { get; set; }
-    public Size Size { get; set; }  // TODO fetch from dndbeyond api
+    public required string Race { get; set; }
+    public Size Size { get; set; }
 
-    public Dictionary<string, int> ClassLevels { get; set; }
-    public int Proficiency { get; set; }
+    public required string Classes { get; set; }
+    public int ProficiencyBonus { get; set; }
 
-    public int Speed { get; set; }
-    public int Initiative { get; set; }
+    public int MovementSpeed { get; set; }  // TODO consider flying speed?
     public int ArmorClass { get; set; }
-    public HitPoints HitPoints { get; set; }
+    public int Initiative { get; set; }
 
-    public List<AbilityScore> AbilityScores { get; set; }
+    public required HitPoints HitPoints { get; set; }
+    public required List<AbilityScore> AbilityScores { get; set; }
 }

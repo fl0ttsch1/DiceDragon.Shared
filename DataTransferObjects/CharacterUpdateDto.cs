@@ -4,22 +4,23 @@ namespace DiceDragon.Shared.DataTransferObjects;
 
 public class CharacterUpdateDto
 {
-    // TODO move to separate project, share via nuget
+    // TODO make properties nullable (except Id)
 
-    public string Id { get; set; }
+    public required string Id { get; set; }
+
     public string Name { get; set; }
     public string? Thumbnail { get; set; }
 
-    public string Race { get; set; }
-    public string Classes { get; set; }
-    public int Proficiency { get; set; }
+    public required string Race { get; set; }   // TODO fetch from api?
+    public required string Classes { get; set; }
+    public int ProficiencyBonus { get; set; }
 
-    public int Speed { get; set; }
-    public int Initiative { get; set; }
+    public int MovementSpeed { get; set; }
     public int ArmorClass { get; set; }
-    public HitPoints HitPoints { get; set; }
+    public int Initiative { get; set; }
+    public required HitPoints HitPoints { get; set; }
 
-    public Dictionary<string, int> Abilities { get; set; }
-    public List<SavingThrowUpdateDto> Saves { get; set; }
-    public List<SkillUpdateDto> Skills { get; set; }
+    public required List<AbilityScoreUpdateDto> AbilityScores { get; set; }
+    public required List<SavingThrowUpdateDto> SavingThrows { get; set; }
+    public required List<SkillUpdateDto> Skills { get; set; }
 }
