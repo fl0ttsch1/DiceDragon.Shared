@@ -6,6 +6,7 @@ public class CharacterSheet
 {
     // TODO spells
     // TODO inventory (weapons!)
+    // TODO list of conditions
 
     public required string Race { get; set; }
     public Size Size { get; set; }

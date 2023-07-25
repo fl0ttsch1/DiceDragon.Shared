@@ -1,8 +1,15 @@
 ﻿namespace DiceDragon.Shared.DataTransferObjects;
 
 public record RollUpdateDto(
-    string Name,
+    DateTime DateTime,
+    //string CampaignId,
+    string CharacterId,
+    bool IsPrivate,
+
     string Action,
     string Type,
-    string Dice,
-    int Total);
+    string? With,
+    string Notation,
+
+    int? Total,
+    string? Result);
