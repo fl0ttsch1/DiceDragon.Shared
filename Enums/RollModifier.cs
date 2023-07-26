@@ -1,8 +1,8 @@
 ﻿namespace DiceDragon.Shared.Enums;
 
-public enum RollType
+public enum RollModifier
 {
-    Default,
+    Flat,
     Advantage,
     Disadvantage
 }

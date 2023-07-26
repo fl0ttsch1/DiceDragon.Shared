@@ -2,8 +2,12 @@
 
 namespace DiceDragon.Shared.DataTransferObjects;
 
-public record RollCreationDto(
-    string CharacterId,
-    string Name,
-    int Index,
-    RollType? Type = null);
+public class RollCreationDto
+{
+    public required string CharacterId { get; set; }
+    public bool IsPrivate { get; set; }
+
+    public required string Action { get; set; } // e.g. AbilityScore
+    public required string Key { get; set; }    // e.g. Strength
+    public RollModifier Modifier { get; set; }
+}
