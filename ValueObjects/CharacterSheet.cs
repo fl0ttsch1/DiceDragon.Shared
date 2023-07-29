@@ -1,6 +1,6 @@
-﻿namespace DiceDragon.Shared.ValueObjects;
+﻿using DiceDragon.Shared.Enums;
 
-using Size = Enums.Size;
+namespace DiceDragon.Shared.ValueObjects;
 
 public class CharacterSheet
 {

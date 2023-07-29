@@ -21,6 +21,7 @@ public class CharacterUpdateDto
     public required HitPoints HitPoints { get; set; }
     public required List<string> Conditions { get; set; }
 
+    // TODO pass css selectors?
     public required List<AbilityScoreUpdateDto> AbilityScores { get; set; }
     public required List<SavingThrowUpdateDto> SavingThrows { get; set; }
     public required List<SkillUpdateDto> Skills { get; set; }

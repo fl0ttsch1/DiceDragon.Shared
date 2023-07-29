@@ -1,9 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+		<PackageOutputPath>C:\Users\Flo\source\nuget\$(AssemblyName)\</PackageOutputPath>
+		<PackageProjectUrl></PackageProjectUrl>
+		<RepositoryUrl>https://bitbucket.org/fl0ttsch1/dicedragon.shared</RepositoryUrl>
+		<Version>1.0.0.0</Version>
+		<PackageReadmeFile />
+	</PropertyGroup>
 
 </Project>
