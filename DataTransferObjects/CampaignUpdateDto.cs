@@ -2,5 +2,4 @@
 
 public record CampaignUpdateDto(
     string Id,
-    string Name, 
-    List<CampaignUpdateCharacterDto> Characters);
+    string Name);

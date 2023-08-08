@@ -6,6 +6,7 @@ public class CharacterDto
 {
     public required string Id { get; set; }
     public required string Name { get; set; }
+    public bool IsActive { get; set; }
 
     public string? ThumbnailUrl { get; set; }
     public string? PlayerId { get; set; }

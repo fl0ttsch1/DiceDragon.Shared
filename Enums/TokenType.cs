@@ -1,6 +1,6 @@
 ﻿namespace DiceDragon.Shared.Enums;
 
-public enum CreatureType
+public enum TokenType
 {
     PC,
     NPC,
