@@ -6,7 +6,6 @@ public class CharacterSheet
 {
     // TODO spells
     // TODO inventory (weapons!)
-    // TODO list of conditions
 
     public required string Race { get; set; }
     public Size Size { get; set; }
@@ -19,5 +18,7 @@ public class CharacterSheet
     public int Initiative { get; set; }
 
     public required HitPoints HitPoints { get; set; }
+    public required List<string> Conditions { get; set; }
+
     public required List<AbilityScore> AbilityScores { get; set; }
 }

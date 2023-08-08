@@ -1,6 +1,6 @@
 ﻿namespace DiceDragon.Shared.DataTransferObjects;
 
-public record CampaignCharacterDto(
+public record CampaignUpdateCharacterDto(
     string Id,
     string Name,
     string PlayerId,

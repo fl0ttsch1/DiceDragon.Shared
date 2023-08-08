@@ -2,7 +2,6 @@
 
 public record RollUpdateDto(
     DateTime DateTime,
-    //string CampaignId,
     string CharacterId,
     bool IsPrivate,
 

@@ -6,7 +6,11 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<RepositoryUrl>https://bitbucket.org/fl0ttsch1/dicedragon.shared</RepositoryUrl>
-		<Version>0.0.2</Version>
+		<Version>0.0.6</Version>
 		<PackageReadmeFile />
 	</PropertyGroup>
+
+	<Target Name="NugetPush" AfterTargets="Pack">
+		<Exec Command="dotnet nuget push **\*.nupkg -s github --skip-duplicate" IgnoreExitCode="true" />
+	</Target>
 </Project>
