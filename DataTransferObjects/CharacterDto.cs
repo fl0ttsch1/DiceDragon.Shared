@@ -13,4 +13,5 @@ public class CharacterDto
     public string? CampaignId { get; set; }
 
     public CharacterSheet? Sheet { get; set; }
+    public MapPosition? Position { get; set; }
 }

@@ -8,7 +8,7 @@ public class CharacterSheet
     // TODO inventory (weapons!)
 
     public required string Race { get; set; }
-    public Size Size { get; set; }
+    public CreatureSize Size { get; set; }
 
     public required string Classes { get; set; }
     public int ProficiencyBonus { get; set; }

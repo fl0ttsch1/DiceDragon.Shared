@@ -1,5 +1,6 @@
 ﻿namespace DiceDragon.Shared.DataTransferObjects;
 
-public record MovementUpdateDto(
+public record PlacementDto(
+    int? MapId, 
     int X,
     int Y);
