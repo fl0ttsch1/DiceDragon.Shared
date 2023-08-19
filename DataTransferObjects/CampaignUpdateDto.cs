@@ -2,4 +2,5 @@
 
 public record CampaignUpdateDto(
     string Id,
-    string Name);
+    string Name,
+    string? CobaltToken);

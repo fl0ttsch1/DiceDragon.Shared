@@ -1,4 +1,4 @@
-﻿using DiceDragon.Shared.ValueObjects;
+﻿using System.Drawing;
 
 namespace DiceDragon.Shared.DataTransferObjects;
 
@@ -7,6 +7,6 @@ public class MapDto
 {
     public int Id { get; set; }
     public required string Name { get; set; }
-    public required ViewBox ViewBox { get; set; }
+    public required RectangleF ViewBox { get; set; }
     public string? CampaignId { get; set; }
 }
