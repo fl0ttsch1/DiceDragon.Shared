@@ -3,4 +3,4 @@
 public record PlacementDto(
     int X,
     int Y,
-    int? MapId);
+    int? MapId = null);

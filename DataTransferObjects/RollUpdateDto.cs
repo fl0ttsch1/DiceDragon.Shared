@@ -2,7 +2,7 @@
 
 public record RollUpdateDto(
     DateTime DateTime,
-    string CharacterId,
+    int CharacterId,
     bool IsPrivate,
 
     string Action,
