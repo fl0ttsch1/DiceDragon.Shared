@@ -1,4 +1,4 @@
-﻿namespace DiceDragon.Shared.DataTransferObjects;
+﻿namespace DiceDragon.Shared.DataTransferObjects.Rolls;
 
 public record RollUpdateDto(
     DateTime DateTime,

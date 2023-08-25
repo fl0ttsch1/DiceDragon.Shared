@@ -1,4 +1,6 @@
-﻿namespace DiceDragon.Shared.DataTransferObjects;
+﻿using DiceDragon.Shared.DataTransferObjects.Characters;
+
+namespace DiceDragon.Shared.DataTransferObjects.Players;
 
 public class PlayerDto
 {

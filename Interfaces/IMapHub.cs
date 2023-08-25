@@ -1,10 +1,10 @@
-﻿using DiceDragon.Shared.DataTransferObjects;
-using System.Drawing;
+﻿using DiceDragon.Shared.DataTransferObjects.Campaigns;
+using DiceDragon.Shared.ValueObjects;
 
 namespace DiceDragon.Shared.Interfaces;
 
 public interface IMapHub
 {
-    Task<CampaignDto> SetCampaign(int campaignId);   // TODO make nullable?
-    Task SetViewBox(Rectangle rectangle);
+    Task<CampaignDto> SetCampaign(int campaignId);
+    Task SetViewBox(DimensionsF viewBox);
 }

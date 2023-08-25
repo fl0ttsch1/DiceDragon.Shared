@@ -1,4 +1,6 @@
-﻿using DiceDragon.Shared.DataTransferObjects;
+﻿using DiceDragon.Shared.DataTransferObjects.Campaigns;
+using DiceDragon.Shared.DataTransferObjects.Characters;
+using DiceDragon.Shared.DataTransferObjects.Rolls;
 
 namespace DiceDragon.Shared.Interfaces;
 public interface IBrowserHub

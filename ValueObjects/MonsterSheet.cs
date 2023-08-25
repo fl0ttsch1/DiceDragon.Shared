@@ -1,4 +1,6 @@
-﻿namespace DiceDragon.Shared.ValueObjects;
+﻿using DiceDragon.Shared.Enums;
+
+namespace DiceDragon.Shared.ValueObjects;
 
 public class MonsterSheet
 {
@@ -11,4 +13,5 @@ public class MonsterSheet
     public int Initiative { get; set; }
 
     public required HitPoints HitPoints { get; set; }
+    public required List<Condition> Conditions { get; set; }
 }

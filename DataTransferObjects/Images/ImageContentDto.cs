@@ -1,4 +1,4 @@
-﻿namespace DiceDragon.Shared.DataTransferObjects;
+﻿namespace DiceDragon.Shared.DataTransferObjects.Images;
 
 public record ImageContentDto(
     byte[] Bytes,

@@ -1,6 +1,6 @@
 ﻿using DiceDragon.Shared.ValueObjects;
 
-namespace DiceDragon.Shared.DataTransferObjects;
+namespace DiceDragon.Shared.DataTransferObjects.Monsters;
 public class MonsterDto
 {
     // TODO senses?
@@ -11,4 +11,6 @@ public class MonsterDto
     public int MovementSpeed { get; set; }
     public int ArmorClass { get; set; }
     public required HitPoints HitPoints { get; set; }
+
+    public MapPosition? Position { get; set; }
 }

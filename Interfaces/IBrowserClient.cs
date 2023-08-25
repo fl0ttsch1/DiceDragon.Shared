@@ -1,4 +1,4 @@
-﻿using DiceDragon.Shared.DataTransferObjects;
+﻿using DiceDragon.Shared.DataTransferObjects.Rolls;
 
 namespace DiceDragon.Shared.Interfaces;
 
