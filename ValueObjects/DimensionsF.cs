@@ -1,22 +1,16 @@
 ﻿namespace DiceDragon.Shared.ValueObjects;
 
-public class DimensionsF
+public class DimensionsF : DimensionsBase<float>
 {
-    public float X { get; set; }
-    public float Y { get; set; }
-    public float Width { get; set; }
-    public float Height { get; set; }
-
     public DimensionsF()
     {
-
     }
 
-    public DimensionsF(float x, float y, float width, float height)
+    public DimensionsF(float x, float y, float size) : base(x, y, size)
     {
-        X = x;
-        Y = y;
-        Width = width;
-        Height = height;
+    }
+
+    public DimensionsF(float x, float y, float width, float height) : base(x, y, width, height)
+    {
     }
 }

@@ -1,16 +1,13 @@
-﻿using DiceDragon.Shared.ValueObjects;
+﻿using DiceDragon.Shared.DataTransferObjects.Creatures;
+using DiceDragon.Shared.Enums;
 
 namespace DiceDragon.Shared.DataTransferObjects.Monsters;
-public class MonsterDto
+
+public class MonsterDto : CreatureDto
 {
     // TODO senses?
+    // TODO immunities?
+    // TODO abilities?
 
-    public int Id { get; set; }
-    public required string Name { get; set; }
-
-    public int MovementSpeed { get; set; }
-    public int ArmorClass { get; set; }
-    public required HitPoints HitPoints { get; set; }
-
-    public MapPosition? Position { get; set; }
+    public MonsterType MonsterType { get; set; }
 }

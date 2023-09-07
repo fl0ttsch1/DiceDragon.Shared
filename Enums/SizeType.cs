@@ -1,6 +1,6 @@
 ﻿namespace DiceDragon.Shared.Enums;
 
-public enum CreatureSize
+public enum SizeType
 {
     None = 1,
     Tiny = 2,

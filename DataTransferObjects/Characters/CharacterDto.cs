@@ -1,22 +1,12 @@
-﻿using DiceDragon.Shared.ValueObjects;
+﻿using DiceDragon.Shared.DataTransferObjects.Creatures;
 
 namespace DiceDragon.Shared.DataTransferObjects.Characters;
 
-public class CharacterDto : IComparable<CharacterDto>
+public class CharacterDto : CreatureDto
 {
-    public int Id { get; set; }
-    public required string Name { get; set; }
-    public bool IsActive { get; set; }
+    public required string Race { get; set; }
+    public required string Classes { get; set; }
 
-    public int CampaignId { get; set; }
-    public required string PlayerId { get; set; }
-    public string? ThumbnailUrl { get; set; }
-
-    public CharacterSheet? Sheet { get; set; }
-    public MapPosition? Position { get; set; }  // TODO flatten?
-
-    public int CompareTo(CharacterDto? other)
-    {
-        return Id - other?.Id ?? 0;
-    }
+    public required List<AbilityDto> Abilities { get; set; }
+    public required List<SkillDto> Skills { get; set; }
 }

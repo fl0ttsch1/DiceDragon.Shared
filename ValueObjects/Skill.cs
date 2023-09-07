@@ -6,5 +6,5 @@ public class Skill
 {
     public required string Name { get; set; }
     public int Modifier { get; set; }
-    public Proficiency Proficiency { get; set; }
+    public ProficiencyType Proficiency { get; set; }
 }

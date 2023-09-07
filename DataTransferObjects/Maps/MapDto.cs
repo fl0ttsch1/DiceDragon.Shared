@@ -1,4 +1,6 @@
 ﻿using DiceDragon.Shared.DataTransferObjects.Characters;
+using DiceDragon.Shared.DataTransferObjects.MapRooms;
+using DiceDragon.Shared.DataTransferObjects.MapTiles;
 using DiceDragon.Shared.ValueObjects;
 
 namespace DiceDragon.Shared.DataTransferObjects.Maps;
@@ -9,10 +11,11 @@ public class MapDto
 {
     public int Id { get; set; }
     public int CampaignId { get; set; }
+    public bool IsActive { get; set; }
 
     public required string Name { get; set; }
     public required Dimensions Bounds { get; set; }
-    public required DimensionsF ViewBox { get; set; }
+    public DimensionsF? ViewBox { get; set; }
 
     public required List<MapRoomDto> Rooms { get; set; }
     public required List<MapTileDto> Tiles { get; set; }
