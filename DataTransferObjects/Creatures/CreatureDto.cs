@@ -45,5 +45,6 @@ public class CreatureDto : IEquatable<CreatureDto>
 
     public override int GetHashCode()
     {
+        return Id.GetHashCode();
     }
 }
