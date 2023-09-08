@@ -1,4 +1,6 @@
 ﻿using DiceDragon.Shared.DataTransferObjects.Characters;
+using DiceDragon.Shared.DataTransferObjects.MapRooms;
+using DiceDragon.Shared.DataTransferObjects.MapTiles;
 using DiceDragon.Shared.ValueObjects;
 
 namespace DiceDragon.Shared.DataTransferObjects.Maps;
@@ -15,8 +17,8 @@ public class MapDto
     public required Dimensions Bounds { get; set; }
     public DimensionsF? ViewBox { get; set; }
 
-    //public required List<MapRoomDto> Rooms { get; set; }
-    //public required List<MapTileDto> Tiles { get; set; }
+    public required List<MapRoomDto> Rooms { get; set; }
+    public required List<MapTileDto> Tiles { get; set; }
 
     public required List<CharacterDto> Characters { get; set; }
 }
