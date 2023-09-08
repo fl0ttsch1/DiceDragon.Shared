@@ -1,4 +1,6 @@
-﻿using DiceDragon.Shared.DataTransferObjects.Creatures;
+﻿using DiceDragon.Shared.DataTransferObjects.Abilities;
+using DiceDragon.Shared.DataTransferObjects.Creatures;
+using DiceDragon.Shared.DataTransferObjects.Skills;
 
 namespace DiceDragon.Shared.DataTransferObjects.Characters;
 

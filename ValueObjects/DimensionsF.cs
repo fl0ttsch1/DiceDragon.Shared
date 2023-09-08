@@ -1,6 +1,6 @@
 ﻿namespace DiceDragon.Shared.ValueObjects;
 
-public class DimensionsF : DimensionsBase<float>
+public record DimensionsF : DimensionsBase<float>
 {
     public DimensionsF()
     {
