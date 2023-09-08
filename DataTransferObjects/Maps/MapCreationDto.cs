@@ -2,7 +2,9 @@
 
 namespace DiceDragon.Shared.DataTransferObjects.Maps;
 
-public record MapCreationDto(
-    int CampaignId,
-    string Name,
-    DimensionsF ViewBox);
+public class MapCreationDto
+{
+    public int CampaignId { get; set; }
+    public required string Name { get; set; }
+    public RectangleF? ViewBox { get; set; }
+}
