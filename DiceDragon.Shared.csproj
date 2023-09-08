@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<RepositoryUrl>https://bitbucket.org/fl0ttsch1/dicedragon.shared</RepositoryUrl>
-		<Version>1.0.0</Version>
+		<Version>0.1.0</Version>
 		<PackageReadmeFile />
 	</PropertyGroup>
 
