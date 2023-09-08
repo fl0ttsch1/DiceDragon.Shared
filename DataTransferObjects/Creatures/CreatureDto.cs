@@ -39,12 +39,11 @@ public class CreatureDto : IEquatable<CreatureDto>
     }
 
     public override bool Equals(object? obj)
-    {
+{
         return Equals(obj as CreatureDto);
     }
 
     public override int GetHashCode()
     {
-        return Id.GetHashCode();
     }
 }

@@ -6,13 +6,9 @@
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>False</GeneratePackageOnBuild>
 		<RepositoryUrl>https://bitbucket.org/fl0ttsch1/dicedragon.shared</RepositoryUrl>
-		<Version>0.0.8</Version>
+		<Version>1.0.0</Version>
 		<PackageReadmeFile />
 	</PropertyGroup>
-
-	<Target Name="NugetPush" AfterTargets="Pack">
-		<Exec Command="dotnet nuget push **\*.nupkg -s github --skip-duplicate" IgnoreExitCode="true" />
-	</Target>
 
 	<ItemGroup>
 	  <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
