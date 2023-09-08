@@ -10,10 +10,6 @@
 		<PackageReadmeFile />
 	</PropertyGroup>
 
-	<Target Name="NugetPush" AfterTargets="Pack">
-		<Exec Command="dotnet nuget push **\*.nupkg -s github --skip-duplicate" IgnoreExitCode="true" />
-	</Target>
-
 	<ItemGroup>
 	  <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
 	</ItemGroup>
