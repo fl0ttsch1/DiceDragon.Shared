@@ -10,4 +10,5 @@ public class MonsterDto : CreatureDto
     // TODO abilities?
 
     public MonsterType MonsterType { get; set; }
+    public int ChallengeRating { get; set; }
 }

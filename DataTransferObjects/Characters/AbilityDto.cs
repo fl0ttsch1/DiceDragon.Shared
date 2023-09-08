@@ -1,6 +1,6 @@
 ﻿using DiceDragon.Shared.Enums;
 
-namespace DiceDragon.Shared.DataTransferObjects;
+namespace DiceDragon.Shared.DataTransferObjects.Characters;
 
 public class AbilityDto
 {

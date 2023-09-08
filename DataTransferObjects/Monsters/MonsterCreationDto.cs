@@ -1,17 +1,10 @@
-﻿using DiceDragon.Shared.ValueObjects;
+﻿using DiceDragon.Shared.DataTransferObjects.Creatures;
+using DiceDragon.Shared.Enums;
 
 namespace DiceDragon.Shared.DataTransferObjects.Monsters;
-public class MonsterCreationDto
+
+public class MonsterCreationDto : CreatureCreationDto
 {
-    // TODO int? TemplateId
-    // TODO properties from monsterDto
-
-    public string? Name { get; set; }
-    public int? ThumbnailId { get; set; }
-    public int? MovementSpeed { get; set; }
-    public int? Intiative { get; set; }
-    public int? ArmorClass { get; set; }
-    public int? TotalHitPoints { get; set; }
-
-    public HitPoints? HitPoints { get; set; }
+    public MonsterType MonsterType { get; set; }
+    public int ChallengeRating { get; set; }
 }

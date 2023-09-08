@@ -1,6 +1,6 @@
 ﻿namespace DiceDragon.Shared.ValueObjects;
 
-public abstract record DimensionsBase<T> where T : struct
+internal abstract record DimensionsBase<T> where T : struct
 {
     public T X { get; set; }
     public T Y { get; set; }
