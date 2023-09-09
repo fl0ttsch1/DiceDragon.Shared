@@ -1,8 +1,8 @@
 ﻿using DiceDragon.Shared.Enums;
 
-namespace DiceDragon.Shared.DataTransferObjects.Characters;
+namespace DiceDragon.Shared.DataTransferObjects.Creatures;
 
-public class AbilityDto
+public class CreatureAbilityDto
 {
     public int AbilityId { get; set; }
     public required string AbilityName { get; set; }

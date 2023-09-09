@@ -4,6 +4,6 @@ namespace DiceDragon.Shared.DataTransferObjects.Characters;
 
 public class CharacterUpdateDto : CreatureUpdateDto
 {
-    public required string Race { get; set; }
-    public required string Classes { get; set; }
+    public string? Race { get; set; }
+    public string? Classes { get; set; }
 }

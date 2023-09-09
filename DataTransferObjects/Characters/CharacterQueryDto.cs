@@ -1,8 +1,8 @@
-﻿namespace DiceDragon.Shared.DataTransferObjects.Characters;
+﻿using DiceDragon.Shared.DataTransferObjects.Creatures;
 
-public record CharacterQueryDto
+namespace DiceDragon.Shared.DataTransferObjects.Characters;
+
+public class CharacterQueryDto : CreatureQueryDto
 {
-    public int? CampaignId { get; init; }
-    public int? MapId { get; init; }
-    public string? PlayerId { get; init; }
+    
 }

@@ -29,4 +29,7 @@ public class CreatureCreationDto
     public int? PositionMapId { get; set; }
     public int? PositionX { get; set; }
     public int? PositionY { get; set; }
+
+    public List<CreatureAbilityMappingDto>? Abilities { get; set; }
+    public List<CreatureSkillMappingDto>? Skills { get; set; }
 }
