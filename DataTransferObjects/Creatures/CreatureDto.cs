@@ -1,9 +1,14 @@
-﻿using DiceDragon.Shared.DataTransferObjects.Characters;
+﻿using System.Text.Json.Serialization;
+using DiceDragon.Shared.DataTransferObjects.Characters;
+using DiceDragon.Shared.DataTransferObjects.Monsters;
 using DiceDragon.Shared.Enums;
 
 namespace DiceDragon.Shared.DataTransferObjects.Creatures;
 
-public class CreatureDto : IEquatable<CreatureDto>
+[JsonPolymorphic(TypeDiscriminatorPropertyName = "$type")]
+[JsonDerivedType(typeof(CharacterDto), "character")]
+[JsonDerivedType(typeof(MonsterDto), "monster")]
+public abstract class CreatureDto : IEquatable<CreatureDto>
 {
     public int Id { get; init; }
     
