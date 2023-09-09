@@ -2,7 +2,7 @@
 
 public enum RollModifier
 {
-    Flat,
-    Advantage,
-    Disadvantage
+    Flat = 0,
+    Advantage = 1,
+    Disadvantage = 2
 }

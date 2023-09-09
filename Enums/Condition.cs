@@ -18,7 +18,5 @@ public enum Condition
     Prone,
     Restrained,
     Stunned,
-    Unconscious,
-
-    Dead
+    Unconscious
 }

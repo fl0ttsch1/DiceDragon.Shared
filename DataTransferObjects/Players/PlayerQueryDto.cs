@@ -1,3 +1,6 @@
 ﻿namespace DiceDragon.Shared.DataTransferObjects.Players;
 
-public record PlayerQueryDto();
+public class PlayerQueryDto
+{
+    
+}
