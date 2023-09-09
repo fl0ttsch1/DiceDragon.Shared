@@ -1,9 +1,9 @@
-﻿namespace DiceDragon.Shared.DataTransferObjects.MapTiles;
+﻿using DiceDragon.Shared.DataTransferObjects.MapItems;
 
-public class MapTileUpdateDto
+namespace DiceDragon.Shared.DataTransferObjects.MapTiles;
+
+public class MapTileUpdateDto : MapItemUpdateDto
 {
-    public string? Name { get; set; }
-    
     public int? ImageId { get; set; }
     public string? ImageUrl { get; set; }
     
