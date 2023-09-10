@@ -1,9 +1,9 @@
 ﻿namespace DiceDragon.Shared.DataTransferObjects.Images;
 
-public class ImageDto
+public class ImageUpdateDto
 {
-    public int Id { get; set; }
-    public required string ContentType { get; set; }
+    public byte[]? Content { get; set; }
+    public string? ContentType { get; set; }
     public string? Name { get; set; }
     public string? Source { get; set; }
 }
