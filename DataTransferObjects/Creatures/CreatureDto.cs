@@ -5,11 +5,12 @@ using DiceDragon.Shared.Enums;
 
 namespace DiceDragon.Shared.DataTransferObjects.Creatures;
 
-[JsonPolymorphic(TypeDiscriminatorPropertyName = "$type")]
-[JsonDerivedType(typeof(CharacterDto), "character")]
-[JsonDerivedType(typeof(MonsterDto), "monster")]
+[JsonPolymorphic(TypeDiscriminatorPropertyName = nameof(Type))]
+[JsonDerivedType(typeof(CharacterDto), (int)CreatureType.Character)]
+[JsonDerivedType(typeof(MonsterDto), (int)CreatureType.Monster)]
 public abstract class CreatureDto : IEquatable<CreatureDto>
 {
+    public CreatureType Type { get; init; }
     public int Id { get; init; }
     
     public int? CampaignId { get; set; }
