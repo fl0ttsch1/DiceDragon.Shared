@@ -30,9 +30,9 @@ public abstract class CreatureDto : IEquatable<CreatureDto>
     
     // health
     public bool IsDead { get; set; }
-    public int HitPointsCurrent { get; set; }
-    public int HitPointsTemporary { get; set; }
-    public int HitPointsTotal { get; set; }
+    public int CurrentHitPoints { get; set; }
+    public int TemporaryHitPoints { get; set; }
+    public int TotalHitPoints { get; set; }
     public required List<Condition> Conditions { get; set; }
 
     // position
@@ -47,18 +47,7 @@ public abstract class CreatureDto : IEquatable<CreatureDto>
     public required List<CreatureAbilityDto> Abilities { get; set; }
     public required List<CreatureSkillDto> Skills { get; set; }
 
-    public bool Equals(CreatureDto? other)
-    {
-        return Id == other?.Id;
-    }
-
-    public override bool Equals(object? obj)
-    {
-        return Equals(obj as CreatureDto);
-    }
-
-    public override int GetHashCode()
-    {
-        return Id.GetHashCode();
-    }
+    public bool Equals(CreatureDto? other) => Id == other?.Id;
+    public override bool Equals(object? obj) => Equals(obj as CreatureDto);
+    public override int GetHashCode() => Id.GetHashCode();
 }
